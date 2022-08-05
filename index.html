@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Template 1</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+    <header>
+        <a href="#" class="logo">logo</a>
+        <ul>
+            <li><a href="#" class="active">Main Page</a></li>
+            <li><a href="#">page 1</a></li>
+            <li><a href="#">page 2</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars2.png" id="stars">
+        <img src="Moon3.png" id="moon">
+        
+        <img src="Mountains-behind.png" id="Mountains-behind">
+        
+        <img src="mountains-front2.png" id="mountains-front">
+        <h2 id="text">Yashvin is the biggest noob</h2>
+    </section>
+    <div class="sec">
+        <h2>Title</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, consequuntur blanditiis ipsam omnis saepe eveniet, nihil repudiandae, pariatur fugiat magni autem eaque voluptatibus vel perferendis asperiores accusamus sapiente nam soluta?</p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let Mountains_behind = document.getElementById('Mountains_behind');
+        let mountains_front = document.getElementById('mountains_front');
+
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            text.style.marginRight=value*6+'px'
+        })
+    </script>
+    </body>
+</html>
